@@ -1,14 +1,3 @@
-function sendMessage() {
-    var message = document.getElementById("#inputField").value;
-    if (message === '') {
-        return;
-    }
-    if (!message.includes("/")) {
-        
-        socket.emit('smes', message);
-    }
-    document.getElementById("#inputField").value = "";
-}
 
 function upd(messageJson) {
     var chatBox = document.querySelector('.chatBox');
