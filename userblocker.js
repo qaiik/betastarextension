@@ -120,7 +120,12 @@ socket.on("rmes", (m) => {
         }
     }
 })
-
+document.querySelector("body > form").onkeyup = (k)=>{
+    if (k.code === 13) {
+        document.getElementById("#inputField").value = "";
+    }
+        
+}
 // window.bumodal="";
 // document.querySelector("body > div.chatBox").oncontextmenu = (e)=>{
 //     e.preventDefault();
