@@ -28,3 +28,21 @@ socket.on("rmes", (m)=>{
     }
     })
 })
+
+// window.bumodal="";
+// document.querySelector("body > div.chatBox").oncontextmenu = (e)=>{
+//     e.preventDefault();
+//     let chatmessage = e.target.parentNode;
+//     let el = document.createElement("div")
+//     el.innerHTML = `<div style="position: absolute; background-color: white; top:${event.pageY - 10}px;left:${event.pageX - 40}px" class="elementRightClickMenu"><p onclick="setAvatar()">Set Avatar</p></div>`
+//     document.querySelector("body").appendChild(el)
+//     window.bumodal = el
+  
+// }
+
+// document.querySelector("body > div.chatBox").onclick = (e)=>{
+//     e.preventDefault();
+//     window.bumodal.remove();
+//     window.bumodal = ""
+ 
+}
