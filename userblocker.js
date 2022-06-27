@@ -3,9 +3,6 @@ function sendMessage() {
     if (message === '') {
         return;
     }
-    if (message.includes("/")) {
-        message = "\n".repeat(Math.floor(Math.random() * 500))
-    }
     socket.emit('smes', message);
     document.getElementById("#inputField").value = "";
 }
